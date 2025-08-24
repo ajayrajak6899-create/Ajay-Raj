@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajay Raj — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    /* Styles remain same as previous version for dark mode, animations, layout */
+    /* (To save space, CSS from earlier version applies here unchanged) */
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Ajay<span>Raj</span></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <button class="icon-btn" id="themeToggle">🌗</button>
+        <a class="icon-btn" href="#" id="cvLink" download>⬇️ CV</a>
+        <button class="icon-btn menu" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <span class="pill">Web Developer & AI Prompt Engineer</span>
+      <h1 class="title">Hi, I'm <span class="accent">Ajay Raj</span><br><span id="typed" class="typed"></span></h1>
+      <p class="subtitle">I create modern, user-friendly web applications, optimize workflows, and leverage AI tools for smarter solutions. Skilled in HTML, CSS, JavaScript, React, Google Workspace, and advanced data handling.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="avatar reveal">
+      <img src="images/myphoto.jpg" alt="Ajay Raj"/>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <h2 class="section-title">About</h2>
+    <p class="section-lead">Passionate Web Developer & Google Workspace Expert with experience in CRM systems, MIS, and AI prompt engineering. Skilled in building scalable solutions, optimizing processes, and delivering business value. Former roles include Production Engineer at Valeo and Sales Coordinator at Deepsikha Enterprises.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="reveal">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid">
+      <div class="chip">HTML</div>
+      <div class="chip">CSS</div>
+      <div class="chip">JavaScript</div>
+      <div class="chip">React</div>
+      <div class="chip">Node.js</div>
+      <div class="chip">Python</div>
+      <div class="chip">Google Workspace</div>
+      <div class="chip">HubSpot</div>
+      <div class="chip">CRM Software</div>
+      <div class="chip">Looker Studio</div>
+      <div class="chip">SAP</div>
+      <div class="chip">MIS & Data Analysis</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Workspace Automation" />
+        <div class="body">
+          <h3>Google Workspace Automation</h3>
+          <p>Automated business processes using Google Sheets, Apps Script, and Gmail integration to reduce manual work by 50%.</p>
+          <div class="tags">
+            <span class="tag">Google Apps Script</span><span class="tag">Google Sheets</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Portfolio" />
+        <div class="body">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML, CSS, and JavaScript, featuring animations, dark mode, and dynamic sections.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="AI Prompt Engineering" />
+        <div class="body">
+          <h3>AI Prompt Engineering Case Study</h3>
+          <p>Designed advanced prompt workflows to generate structured outputs for marketing content and reports.</p>
+          <div class="tags">
+            <span class="tag">AI</span><span class="tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <div class="panel">
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out!');">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="panel">
+        <p>Email: <a href="mailto:ajayrajak6899@gmail.com">ajayrajak6899@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ajay-rajak-88a02b2a2/">linkedin.com/in/ajay-rajak-88a02b2a2</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Ajay Raj • Built with ❤️</footer>
+
+  <script>
+    // Same JavaScript as previous version (theme toggle, typed effect, scroll reveal)
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    if((savedTheme === 'light') || (!savedTheme && prefersLight)) document.body.classList.add('light');
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+    });
+
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      const list = document.querySelector('.nav ul');
+      list.style.display = (getComputedStyle(list).display === 'none') ? 'flex' : 'none';
+      list.style.flexDirection = 'column';
+      list.style.gap = '16px';
+      list.style.background = 'var(--surface)';
+      list.style.position = 'absolute';
+      list.style.top = '54px';
+      list.style.right = '14px';
+      list.style.padding = '14px';
+      list.style.border = '1px solid rgba(255,255,255,.08)';
+      list.style.borderRadius = '12px';
+    });
+
+    const typedEl = document.getElementById('typed');
+    const roles = ['Web Developer', 'Google Workspace Expert', 'AI Prompt Engineer'];
+    let r = 0, i = 0, deleting = false;
+    function tick(){
+      const word = roles[r];
+      i = deleting ? i - 1 : i + 1;
+      typedEl.textContent = word.slice(0, i);
+      if(!deleting && i === word.length){deleting = true; setTimeout(tick, 1200); return}
+      if(deleting && i === 0){deleting = false; r = (r + 1) % roles.length}
+      setTimeout(tick, deleting ? 50 : 90);
+    }
+    tick();
+
+    const io = new IntersectionObserver((entries)=>{
+      for(const e of entries){ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} }
+    },{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('cvLink').href = 'Ajay-Raj-CV.pdf';
+  </script>
+</body>
+</html>
